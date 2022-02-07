@@ -1,0 +1,172 @@
+.section1Page2{
+    height: 260px;
+    width: 100vw;
+    background-image: url(../images/head2.png);
+    .divSec1{
+        width: 1140px;
+        height: 100%;
+        // background-color: aqua;
+        margin: 0 auto;
+        .mainDivSec1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                color: white;
+                font-family: 'MeriendaBold';
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+.section2Page2{
+    width: 100vw;
+    height: 1218px;
+    .mainDivSec2Page2{
+        height: 100%;
+        width: 800px;
+        margin: 0 auto;
+        .div1Sec2Page2{
+            width: 100%;
+            height: 485px;
+            display: flex;
+            flex-wrap: nowrap;
+            
+            .div1Div{
+                width: 400px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                padding-left: 25px;
+                padding-right: 25px;
+                align-items:center;
+                flex-direction: column;
+                font-family: 'Merienda';
+                font-size: 14px;
+                color: black;
+                text-align: center;
+                .title{
+                    font-size: 24px;
+                }
+                div{
+                    background-image:url(../images/beanslogo.svg);
+                    width: 200px;
+                    height: 30px;
+                    background-size:cover;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .div2Sec2Page2{
+            width: 100%;
+            height: 153px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+
+            hr{
+                // position: absolute;
+                width: 240px;
+                color: black;
+                background-color:black;
+                margin: 0;
+            }
+            .divMainForm{
+                width: 100%;
+                height: 152px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                .divSearch, .divFilters{
+                    width: 400px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items:center;
+                    font-family: 'Merienda';
+                    font-size: 14px;
+                    // background-color: aqua;
+                }
+                .divSearch{
+                    label{
+                        margin-right: 20px;
+                    }
+                    input{
+                        font-size: 12px;
+                        font-family: inherit;
+                        text-align: center;
+                        width: 180px;
+                        height: 30px;
+                        border: none;
+                        background: #FFFFFF;
+                        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+                        border-radius: 4px;
+                    }
+                }
+                .divFilters{
+                    justify-content: space-evenly;
+                    .buttonsFilter{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        width: 235px;
+                        button{
+                            width: 75px;
+                            height: 30px;
+                            font-size: 12px;
+                            font-family: inherit;
+                            background: #FFFFFF;
+                            border:none;
+                            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+                            border-radius: 4px;
+                        }
+                        button:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .div3Sec2Page2{
+            width: 100%;
+            height: 580px;
+            display: flex;
+            justify-content: space-between;
+            align-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.itemCoffee{
+    width: 220px;
+    height: 260px;
+    box-shadow: 5px 5px 15px 1px rgb(190, 190, 190);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    p, img{
+        margin: 0;
+        font-family: 'Merienda';
+        font-size: 14px;
+    }
+    .price, .country{
+        margin-left: 140px;
+        margin-top: 14px;
+    }
+    .label{
+        margin-top: 14px;
+    }
+    .price{
+        font-weight: bold;
+    }
+}
+
+.activeButton{
+    font-weight: bold;
+}

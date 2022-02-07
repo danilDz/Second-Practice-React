@@ -1,0 +1,228 @@
+@import url(../fonts.css);
+
+.section1{
+    width: 100vw;
+    height: 640px;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url(../images/titleimg.png);
+}
+
+.divSec1{
+    width: 1143px;
+    height: 100%;
+    margin: 0px auto; 
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    font-family: 'Merienda';
+    font-size: 12px;
+    display: flex;
+    align-items: flex-end;
+    nav{
+        display: flex;
+        width: 355px;
+        margin-left: 40px;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items:flex-end;
+        }
+    }
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainDiv1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    p {
+        font-family: 'MeriendaBold';
+        color: white;
+        margin-bottom: 20px;
+        font-size: 40px;
+        // margin: auto 0;
+    }
+    div {
+        background-image:url(../images/beanslogo.png);
+        width: 200px;
+        height: 30px;
+        background-size:cover;
+        margin-bottom: 30px;
+    }
+    .minP{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    button{
+        width: 120px;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        background: none;
+        border: 1px solid white;
+        p{
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+    button:hover{
+        cursor: pointer;
+    }
+}
+
+.navigationIMG{
+    height: 40px;
+    width: 50px;
+    // margin-right: 80px;
+    // margin-bottom: 40px;
+    // position: absolute;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url(../images/logo.png);
+}
+
+.section2{
+    width: 100vw;
+    height: 520px;
+    .sec2DivMain{
+        width: 590px;
+        height: 100%;
+        // background-color:aqua;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        font-family: 'Merienda';
+        font-size: 14px;
+        text-align: center;
+        div{
+            background-image:url(../images/beanslogo.svg);
+            width: 200px;
+            height: 30px;
+            background-size:cover;
+        }
+        .title{
+            font-size: 24px;
+        }
+    }
+}
+
+.section3{
+    width: 100vw;
+    height: 495px;
+    background-image:url(../images/lastsec.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    .sec3Div{
+        width: 800px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        margin: 0 auto;
+        p{
+            font-family: 'Merienda';
+            font-size: 24px;
+            color:black;
+        }
+        .divOfDivs{
+            width: 100%;
+            height: 240px;
+            display: flex;
+            justify-content: space-between;
+            .divItem{
+                width: 220px;
+                height: 240px;
+                background-color:white;
+                border-radius: 8px;
+                // opacity: .65;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                p{
+                    font-size: 14px;
+                    opacity: 1;
+                    margin: 5px;
+                }
+                .price{
+                    margin-left: 130px;
+                    font-weight: bold;
+                }
+                .descr{
+                    margin-top: 14px;
+                }
+                div{
+                    width: 151px;
+                    height: 130px;
+                }
+                .img1{
+                    background-image:url(../images/img1.png);
+                }
+                .img2{
+                    background-image:url(../images/img2.png);
+                }
+                .img3{
+                    background-image:url(../images/img3.png);
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100vw;
+    height: 150px;
+    background-color:white;
+    .divFooter{
+        width: 600px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        header{
+            nav{
+                a{
+                    color: black;
+                }
+            }
+            justify-content: center;
+        }
+        .navigationIMG{
+            // height: 50px;
+            background-size:contain;
+            background-image: url(../images/logo1.png);
+        }
+        .imgFooter{
+            background-image:url(../images/beanslogo.svg);
+            width: 200px;
+            height: 30px;
+            background-size:cover;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+    }
+    
+}
