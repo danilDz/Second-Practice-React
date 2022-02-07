@@ -33,7 +33,8 @@ class ItemCoffee extends Component{
         return (
             <div className="itemCoffee">
                 <img src={img3} alt="coffee"/>
-                <p className="label">AROMISTICO Coffee 1 kg</p>
+                {/* <p className="label">AROMISTICO Coffee 1 kg</p> */}
+                <p className="label">{this.props.label}</p>
                 <p className="country">{this.props.country}</p>
                 <p className="price">6.99$</p>
             </div>
@@ -48,12 +49,12 @@ class Section2 extends Component{
         super(props)
         this.state = {
             data : [
-                {country: 'Brazil'},
-                {country: 'Kenya'},
-                {country: 'Brazil'},
-                {country: 'Kenya'},
-                {country: 'Kenya'},
-                {country: 'Columbia'}
+                {country: 'Brazil', label: 'AROMISTICO Coffee 1 kg'},
+                {country: 'Kenya', label: 'SDCSD Coffee 1 kg'},
+                {country: 'Brazil', label: 'YUJYUJYHN Coffee 1 kg'},
+                {country: 'Kenya', label: 'AEFE Coffee 1 kg'},
+                {country: 'Kenya', label: 'AROMISTICO Coffee 1 kg'},
+                {country: 'Columbia', label: 'YHYH Coffee 1 kg'}
             ],
             filter: '',
             term: ''
@@ -97,7 +98,7 @@ class Section2 extends Component{
     listOfItems = (data) => {
         const elements = data.map((item, index) => {
             if (item) {
-                return <ItemCoffee country={item.country} key={index}/>                
+                return <ItemCoffee label={item.label} country={item.country} key={index}/>                
             }
         })
 
@@ -114,7 +115,7 @@ class Section2 extends Component{
             return data
         } else {
             return data.map(item => {
-                if (item.country.includes(term)) {
+                if (item.label.includes(term)) {
                     return item
                 }
             });
